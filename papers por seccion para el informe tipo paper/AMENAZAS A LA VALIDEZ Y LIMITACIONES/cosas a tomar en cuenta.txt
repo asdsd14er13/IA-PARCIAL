@@ -1,0 +1,16 @@
+si te puede ayudar el formato para esta sección lo usas sino no hay problema yo creo en tu criterio:
+
+
+1. Amenazas a la Validez Externa y Sesgo de Cobertura EspacialTu modelo fue entrenado exclusivamente con datos de 7 estaciones de monitoreo en Lima Metropolitana hasta mayo de 2024. No se puede asumir que estos patrones se generalicen automáticamente a otras regiones geográficas del Perú o a años futuros con comportamientos climáticos distintos (como el Fenómeno de El Niño).
+remotesensing-17-03472-v2.pdf
+
+2. Amenazas a la Validez Interna: El impacto del Muestreo (Sampling) y la ImputaciónPara mitigar el costo computacional de las más de 209K filas utilizables, tu experimento recurrió a un muestreo aleatorio fijo (MAX_TRAIN = 30000, MAX_TEST = 15000). Además, el dataset original cuenta con un alto porcentaje de nulos crudos (34.06% en PM₁₀ y 48.22% en NO₂) resueltos mediante un pipeline automatizado. El submuestreo y la calidad del dato crudo introducen amenazas a la estabilidad interna del modelo.
+algorithms-18-00212-v2.pdf
+
+
+3. Amenazas a la Validez de Constructo: Estimación contemporánea vs. Pronóstico FuturoUna limitación teórica crucial de tu constructo es que el notebook utiliza mediciones de PM₁₀ y NO₂ de la misma hora para estimar el \[PM_{2.5}\]. Por ende, el modelo no es un pronóstico anticipado (alerta temprana), sino un reconstructor o estimador de datos faltantes para registros históricos cuando los sensores gaseosos sí funcionaron. 
+information-17-00581.pdf
+
+
+4. Amenazas a la Validez de Conclusión: Incertidumbre por una única División TemporalTu diseño experimental se evaluó con un único corte cronológico (entrenamiento antes de 2023 y prueba de 2023 en adelante). Si bien esto evita estrictamente la fuga de datos, las conclusiones estadísticas son sensibles a la distribución específica de ese periodo de prueba.
+Machine_learning-driven_framework_for_realtime_air.pdf

@@ -1,0 +1,12 @@
+aca cuando hicimos el modelo me dijiste que antes en el modelo joblib habían 2 modelos para mejorar la predicción pero empeoro por que me dijiste que 1 solo estaba dando una mejor predicción que un equipo de 2. 
+si es asi entonces creo que te pueden ayudar estos artículos:
+
+1. Justificación de por qué un ensamble puede rendir menos que su mejor componenteCuando combinas un modelo muy fuerte y no lineal (como Random Forest) con uno lineal más simple mediante un promedio (Voting), el modelo débil puede actuar como un "ancla", arrastrando hacia abajo las predicciones precisas del modelo fuerte.Artículo: Do Ensemble Models Always Win? A Comparative Machine Learning Evaluation for Financial Time-Series Prediction (2026).Sustento para tu paper: Este artículo científico demuestra empírica y estadísticamente que los ensambles basados en promedios simples no siempre superan a sus componentes individuales más fuertes. Explica que en presencia de alta no linealidad, el ensamble degrada el rendimiento de los modelos superiores (como los basados en árboles). este es el articulo esta en la carpeta disccusion 3838457.3838535.pdf
+
+
+
+
+2. Superioridad de Random Forest en la modelación estructurada de Material ParticuladoDebes justificar por qué el Random Forest individual fue tan robusto por sí solo para la calidad del aire.
+main disccusion.pdf
+
+estos son algunos nose si te podrán ayudar en todo caso como es discusión podrías usar papers tanto de antecedentes como de estado del arte o otros que hemos visto y sobre las cosas que hice en el archivo PARCIAL IA SENAHMI.ipynb 

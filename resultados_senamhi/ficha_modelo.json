@@ -1,0 +1,56 @@
+{
+  "fuente": "SENAMHI / Plataforma Nacional de Datos Abiertos",
+  "archivo": "Monitoreo de los contaminantes del aire en Lima Metropolitana - [Servicio Nacional de Meteorología e Hidrología del Perú - SENAMHI]_1.csv",
+  "objetivo": "PM2_5",
+  "variables": [
+    "ESTACION",
+    "PM10",
+    "NO2",
+    "hora",
+    "dia_semana",
+    "mes",
+    "hora_sin",
+    "hora_cos",
+    "dia_sin",
+    "dia_cos"
+  ],
+  "modelo_guardado": "Random Forest regresor",
+  "metricas_modelo_guardado": {
+    "MAE": 5.165408541118097,
+    "RMSE": 8.144146845742974,
+    "R2": 0.4991562399748508
+  },
+  "combinaciones_probadas": {
+    "Voting_lineal_mas_RF": {
+      "MAE": 5.5045686129276445,
+      "RMSE": 8.29967886424771,
+      "R2": 0.47984395109509914,
+      "correlacion_errores": 0.7389936630713497,
+      "explicacion": "No supera al RF solo; los errores de sus componentes se parecen."
+    },
+    "mezcla_ponderada": {
+      "par_elegido_en_validacion": [
+        "Regresión lineal",
+        "Random Forest regresor"
+      ],
+      "peso_primero": 0.0,
+      "RMSE_validacion": 14.647720093257572,
+      "MAE": 6.485736848026028,
+      "RMSE": 9.430442226769882,
+      "R2": 0.3284548863081531,
+      "explicacion": "La validacion asigno peso cero al segundo modelo; la mezcla efectiva fue un modelo individual."
+    },
+    "stacking_4_modelos_RidgeCV": {
+      "MAE": 6.063752489612775,
+      "RMSE": 8.28336839026271,
+      "R2": 0.4818863567110887,
+      "explicacion": "No supera al RF principal en la prueba temporal."
+    }
+  },
+  "corte_temporal": "2023-01-01",
+  "filas_entrenamiento": 30000,
+  "filas_prueba": 15000,
+  "semilla": 42,
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.1"
+}

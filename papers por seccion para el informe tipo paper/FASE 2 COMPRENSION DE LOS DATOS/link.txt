@@ -1,0 +1,8 @@
+para esta fase 2 encontré esto de aquí:
+https://www.datosabiertos.gob.pe/dataset/monitoreo-de-los-contaminantes-del-aire-en-lima-metropolitana-servicio-nacional-de-1
+ya lo descargue y esta en esta dirección: "C:\Users\Robert Herrera\escritorio\Desktop\IA PARCIAL\papers por seccion para el informe tipo paper\FASE 2 COMPRENSION DE LOS DATOS\Diccionario_Datos_Monitoreo de los contaminantes del aire en Lima Metropolitana - [Servicio Nacional de Me.xlsx"
+
+y no te olvides del enlace de donde sque el dataset:
+https://www.datosabiertos.gob.pe/dataset/monitoreo-de-los-contaminantes-del-aire-en-lima-metropolitana-servicio-nacional-de
+de este link aca esta su metadato: "C:\Users\Robert Herrera\escritorio\Desktop\IA PARCIAL\Metadatos_Monitoreo de los contaminantes del aire en Lima Metropolitana - [Servicio Nacional de Meteorología e Hidrología del Perú - SENAMHI].docx"
+y aca esta su diccionario: "C:\Users\Robert Herrera\escritorio\Desktop\IA PARCIAL\Diccionario_Datos_Monitoreo de los contaminantes del aire en Lima Metropolitana - [Servicio Nacional de Meteorología e Hidrología del Perú - SENAMHI].xlsx"

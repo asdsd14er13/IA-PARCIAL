@@ -1,0 +1,18 @@
+por favor si puedes te ayudas de esto por favor si te sirve claro sino no me hagas caso:
+
+éticas de tu informe, la clave académica es justificar que —al no trabajar con datos personales de seres humanos (lo que elimina dilemas clásicos de privacidad o consentimiento informado)— la responsabilidad ética de tu IA se traslada hacia la integridad de los datos abiertos, la transparencia algorítmica (XAI), la reproducibilidad científica y el impacto social de comunicar estimaciones ambientales [3].Basándome en tu archivo .ipynb (uso de datos crudos de SENAMHI con un alto porcentaje de nulos, descarte del ensamble por votación debido a una alta correlación de errores del 0.739 y la selección definitiva de un modelo Random Forest individual) [3], he seleccionado artículos científicos del rango 2022-2026 con sus enlaces directos y públicos para dar soporte a tu redacción:
+
+1. Ética de los Datos Ambientales Abiertos (Atribución y Transparencia)Tu proyecto utiliza un dataset de la plataforma nacional de datos abiertos de Perú proveniente del SENAMHI [3]. La ética en este contexto exige garantizar la veracidad en la manipulación de fuentes públicas y la correcta atribución.Artículo: Data Considerations for AI Applications in Environmental Services: Access, Governance, Quality, and Ethics (2025).Coherencia con tu paper: Este artículo analiza cómo el uso de la IA en la salud y el monitoreo ambiental depende de un ecosistema de datos ético, transparente y equitativo. Argumenta que los investigadores tienen la responsabilidad ética de documentar los sesgos de origen del dato y garantizar iniciativas de datos abiertos (open data) mediante el reconocimiento riguroso de las instituciones proveedoras (como SENAMHI) [3].
+
+
+factsreports-8096.pdf
+
+
+2. Responsabilidad y Transparencia Algorítmica (Auditoría del "Efecto Caja Negra")Al utilizar un modelo de alta complejidad como Random Forest regresor , se corre el riesgo ético de procesar los datos a través de una "caja negra" inescrutable. No obstante, el proyecto aborda esta vulnerabilidad de dos maneras metodológicas explícitas
+Honestidad en la Cooperación de Modelos (El Dilema del Voting): En la sección de modelado se programó un ensamble por votación promediada (VotingRegressor) que acoplaba la Regresión Lineal y el Random Forest . Los resultados revelaron de forma transparente que el ensamble degradaba la precisión en comparación con el modelo individual (RMSE de 8.300 vs. 8.144)  debido a una elevada correlación de errores de 0.739 entre sus componentes . Desde una perspectiva ética, reportar este comportamiento "inesperado" —en lugar de forzar el uso de una arquitectura compleja por mero sesgo de confirmación— constituye un acto de honestidad e integridad científica. El proyecto optó por el principio ético de parsimonia (eficiencia de software) , seleccionando el modelo individual más fuerte  y documentando las limitaciones del ensamble en la ficha del artefacto
+
+ResponsibleuseofAIinsocialscienceresearch.pdf
+
+links que portal de datos abiertos del estado:  https://www.gob.pe/datosabiertos
+
+

@@ -1,0 +1,14 @@
+Bloque 1: Estudios de estimación de contaminantes con Random Forest y Regresión Lineal
+Air Quality Forecasting Using Random Forest Regression. Journal of Innovation and Development
+Evaluating Random Forest Regression for Air Quality Prediction. Journal of Sensors and Environmental Monitoring
+
+Bloque 2: Estudios sobre Técnicas de Ensamble (Voting y Stacking)
+Ensemble learning for air quality index prediction. Nature Scientific Reports
+A Novel Stacking Ensemble Learning Approach for Predicting \[PM_{2.5}\] Levels in Dense Urban Environments. Applied Sciences
+
+Bloque 3: Contexto y Machine Learning en Lima, Perú
+Predicting Air Pollution in Metropolitan Lima Using Gaussian Naïve Bayes (2025): An Efficient Model for Urban Environmental Management
+An Air Quality Monitoring and Forecasting System for Lima City Using Artificial Intelligence
+
+
+si crees que esta bien lo haces ojo es solo mi recomendación.
